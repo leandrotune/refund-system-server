@@ -1,0 +1,5 @@
+#DEPENDENCY
+node_modules/
+
+# IDE
+.vscode/
