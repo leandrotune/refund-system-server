@@ -3,3 +3,9 @@ node_modules/
 
 # IDE
 .vscode/
+
+#Prisma 
+src/generated
+
+#environment variables 
+.env
