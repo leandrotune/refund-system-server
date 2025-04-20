@@ -19,4 +19,16 @@ model User {
   name String
   email String @unique
   password String
+
+  @@map("users")
+}
+
+model Refund {
+  id String @id @default(uuid())
+  personName String
+  category String
+  amount Decimal
+  nameFile String
+
+  @@map("refunds")
 }
