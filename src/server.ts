@@ -4,12 +4,14 @@ import fastifyJwt from "fastify-jwt";
 import { createUser } from "./routes/create-user";
 import { login } from "./routes/login";
 import { profile } from "./routes/profile";
+import { createRefund } from "./routes/create-Refund";
 
 const app = fastify();
 
 app.register(createUser);
 app.register(login);
 app.register(profile);
+app.register(createRefund);
 
 app.register(fastifyJwt, {
 	secret: "secret",
