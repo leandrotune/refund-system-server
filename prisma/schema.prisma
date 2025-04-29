@@ -20,9 +20,17 @@ model User {
 model Refund {
   id         String  @id() @default(uuid())
   personName String
-  category   String
+  category   RefundCategory
   amount     Decimal
   nameFile   String
 
   @@map("refunds")
+}
+
+enum RefundCategory {
+  FOOD
+  HOSTING
+  TRANSPOR
+  SERVICES
+  OTHERS
 }
